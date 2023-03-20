@@ -1,0 +1,11 @@
+import numpy as np
+feature = np.arange(6,21)
+label = np.array((feature*3+4))
+noise = [1]*15
+
+for i in range(15):
+  noise[i]=np.random.randint(-2,2)
+
+print(label)
+print(noise)
+print(label+noise)
