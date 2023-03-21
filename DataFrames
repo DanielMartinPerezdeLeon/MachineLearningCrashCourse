@@ -1,0 +1,18 @@
+import numpy as np
+import pandas as pd
+
+datos= np.random.randint(low=0,high=101,size=(3,4))
+columnas = ['Eleanor','Chidi','Tahani','Jason']
+
+dataframe= pd.DataFrame(data=datos,columns=columnas)
+
+print(dataframe)
+
+print("\n Segundo valor de ELeanor")
+print(dataframe['Eleanor'][1])
+
+dataframe["Janet"]=dataframe['Tahani']+dataframe['Jason']
+
+print("\n Con Janet introducida")
+print(dataframe)
+
