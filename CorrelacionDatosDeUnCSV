@@ -1,0 +1,13 @@
+So far, we've relied on trial-and-error to identify possible features for the model. Let's rely on statistics instead.
+
+A correlation matrix indicates how each attribute's raw values relate to the other attributes' raw values. Correlation values have the following meanings:
+
+1.0: perfect positive correlation; that is, when one attribute rises, the other attribute rises.
+-1.0: perfect negative correlation; that is, when one attribute rises, the other attribute falls.
+0.0: no correlation; the two columns are not linearly related.
+In general, the higher the absolute value of a correlation value, the greater its predictive power. For example, a correlation value of -0.8 implies far more predictive power than a correlation of -0.2.
+
+The following code cell generates the correlation matrix for attributes of the California Housing Dataset:
+
+# Generate a correlation matrix.
+training_df.corr()
